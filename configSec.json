@@ -1,0 +1,26 @@
+{
+    "role": "secondary", 
+    "codes_refresh_interval": 60,
+    "apply_shortcuts": true,    
+    "source": {
+        "connection_string": "mongodb+srv://francesc:francesc@clustertestingest.0asff.mongodb.net/?retryWrites=true&w=majority&appName=ClusterTestIngest",
+        "database_name": "openEHR",
+        "collection_name": "samples"
+      },
+      "target": {
+        "connection_string": "mongodb+srv://francesc:francesc@clustertestingest.0asff.mongodb.net/?retryWrites=true&w=majority&appName=ClusterTestIngest",
+        "database_name": "openEHR",
+        "compositions_collection": "sm-compositions3",
+        "search_collection": "sm-search3",
+        "codes_collection": "_codes",
+        "shortcuts_collection": "_shortcuts",
+        "rebuilt_collection":"compositionsRestored"
+      },
+      "clean_collections": false,
+      "reset_used_flags": false,
+      "batch_size_reset": 2500,
+      "patient_limit": 65000,
+      "replication_factor": 5
+    }
+  
+  
