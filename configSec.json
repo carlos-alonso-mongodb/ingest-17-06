@@ -4,12 +4,12 @@
     "apply_shortcuts": true,    
     "source": {
         "connection_string": "mongodb+srv://francesc:francesc@clustertestingest.0asff.mongodb.net/?retryWrites=true&w=majority&appName=ClusterTestIngest",
-        "database_name": "openEHR",
+        "database_name": "CatSalutCDR",
         "collection_name": "samples"
       },
       "target": {
         "connection_string": "mongodb+srv://francesc:francesc@clustertestingest.0asff.mongodb.net/?retryWrites=true&w=majority&appName=ClusterTestIngest",
-        "database_name": "openEHR",
+        "database_name": "CatSalutCDR",
         "compositions_collection": "sm-compositions3",
         "search_collection": "sm-search3",
         "codes_collection": "_codes",
